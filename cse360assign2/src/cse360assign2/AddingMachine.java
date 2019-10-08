@@ -4,7 +4,7 @@
  * Assignment 2
  * 
  * Description: AddingMachine class will allow a user to enter
- * numbers and operations to either add or subtract. The class
+ * numbers to either add or subtract. The class
  * will also track every number and operation used consecutively
  * in a string.
  ****************************************************************/

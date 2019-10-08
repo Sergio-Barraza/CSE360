@@ -14,34 +14,40 @@ package cse360assign2;
 public class AddingMachine {
 
 	private int total;
+	private String transactionHistory = "0";
 	
 	// Default Constructor.
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 	}
 	
-	// Returns the total.
+	// Returns the total of all user inputs.
 	public int getTotal () {
-		return 0;
+		return this.total;
 	}
 	
-	// Adds the values.
+	// Adds the values and adds to the user input history.
 	public void add (int value) {
-		
+		this.total = this.total + value;
+		this.transactionHistory = this.transactionHistory + " + " + value;
 	}
 	
-	// Subtracts the values.
+	// Subtracts the values and adds to the user input history.
 	public void subtract (int value) {
-		
+		this.total = this.total - value;
+		this.transactionHistory = this.transactionHistory + " - " + value;
 	}
 	
 	// Returns a string of the user input (numbers and operations).
 	public String toString () {
-		return "";
+		return this.transactionHistory;
 	}
 	
 	// Clears all to default.
 	public void clear() {
-	
+		this.total = 0;
+		this.transactionHistory = "0";
+		
 	}
 }
+
